@@ -18,6 +18,9 @@ class Nave():
     def blitme(self):
         self.tela.blit(self.imagem, self.rect)
 
+    def centralizar_nave(self):
+       self.center = self.tela_rect.centerx
+
     def update(self):
         if self.movendoDireita and self.rect.right < self.tela_rect.right:
           self.rect.centerx += 1
